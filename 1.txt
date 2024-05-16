@@ -1,0 +1,29 @@
+Write a blog on Difference between HTTP1.1 vs HTTP2 ?
+
+
+HTTP stand for(HYPER TEXT TRANSFER PROTOCOL) and It is used for client server communication by using HTTP.User sends the request to the server and The server sends the responses to the users. 
+
+HTTP 1.1                                                                                                  HTTP 2       
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1.The first usable version of HTTP was created in 1997.                                                 1.In 2015, a new version of HTTP called HTTP/2 was created. 
+ Because it went through several stages of development,                                                    HTTP/2 solves several problems that the creators of HTTP/1.1 did not anticipate.  
+ this first version of HTTP was called HTTP/1.1.                                                           HTTP/2 is much faster and more efficient than HTTP/1.1. 
+ This version is still in use on the web.                                                                  One of the ways in which HTTP/2 is faster is in how it prioritizes content during the loading process.           
+ 
+ 
+ 2.HTTP/1.1 loads resources one after the other,                                                         2.HTTP/2 is able to use a single TCP connection to send multiple streams of data at once 
+ so if one resource cannot be loaded,                                                                      so that no one resource blocks any other resource.
+ it blocks all the other resources behind it. 
+
+
+ 3.Small files load more quickly than large ones.                                                        3.However, HTTP/2 uses a more advanced compression method called HPACK that eliminates redundant information 
+ HTTP messages to make them smaller.                                                                       in HTTP header packets. This eliminates a few bytes from every HTTP packet. 
+ To speed up web performance,both HTTP/1.1 and HTTP/2 compress 
+
+
+ 4.It works on the textual format.                                                                       4.It works on the binary protocol.
+
+ 
+ 5.It uses requests resource Inlining for use getting multiple pages.                                    5.It uses PUSH frame by server that collects all multiple pages.
+
+
