@@ -1,0 +1,39 @@
+Write a blog about objects and its internal representation in Javascript
+
+OBJECTS:
+
+In JavaScript, objects are fundamental data types that allow developers to store collections of data and organize functionality. 
+Understanding how objects are structured and represented internally is crucial for writing efficient and effective JavaScript code.
+
+  eg code:
+
+
+let person={
+  id:25,
+  name:'ligesh',
+  age='19',
+  native:'chidambaram',
+}
+
+  console.log(person["name"]);
+
+
+INTERNAL REPRESENTATION OF OBJECTS:
+
+Under the hood, JavaScript engines like V8 used in Chrome and Node.js store objects as dictionaries or hash maps.
+This means that objects are essentially collections of properties, where each property has a name (key) and a corresponding value.
+
+  1. Properties
+
+Properties in JavaScript objects can be of two types: data properties and accessor properties.
+
+Data Properties: These properties contain a value, which can be any JavaScript data type. Additionally, each data property has attributes associated with it, such as writable, enumerable, and configurable.
+
+Accessor Properties: These properties define a getter and setter function to retrieve or set the value of the property. Accessor properties also have attributes such as enumerable and configurable.
+
+ 2. Prototype Chain
+
+JavaScript objects have an internal link to another object called the prototype. This forms a chain of objects known as the prototype chain. 
+  When accessing a property of an object, if the property is not found in the object itself, JavaScript looks up the prototype chain until it finds the property 
+  or reaches the end of the chain the prototype of Object, which is null.
+
